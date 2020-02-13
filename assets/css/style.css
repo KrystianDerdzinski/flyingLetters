@@ -1,0 +1,140 @@
+body {
+  background-color: #1d1d1d;
+}
+
+.container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .header {
+  position: absolute;
+  top: 5vh;
+  bottom: auto;
+}
+
+.container .header #go {
+  display: block;
+  margin: 2vh auto;
+  background-color: #6c6cc2;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  border: 1px solid #6c6cc2;
+  outline: none;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.container .header #go:hover {
+  cursor: pointer;
+  background-color: #1d1d1d;
+  -webkit-transform: scale(3) translateY(0.8em);
+          transform: scale(3) translateY(0.8em);
+  color: #6c6cc2;
+}
+
+.container .header input {
+  display: block;
+  border-radius: 3px;
+  height: 2em;
+  padding: 0.5em 1em;
+}
+
+.container .header input::-webkit-input-placeholder {
+  color: #6c6cc2;
+  text-align: center;
+}
+
+.container .header input:-ms-input-placeholder {
+  color: #6c6cc2;
+  text-align: center;
+}
+
+.container .header input::-ms-input-placeholder {
+  color: #6c6cc2;
+  text-align: center;
+}
+
+.container .header input::placeholder {
+  color: #6c6cc2;
+  text-align: center;
+}
+
+@-webkit-keyframes growing-button {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+}
+
+@keyframes growing-button {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+}
+
+.lettersBox {
+  font-size: 48px;
+  letter-spacing: 0.5em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lettersBox .letter {
+  opacity: 0;
+  min-width: 1em;
+}
+
+.show {
+  color: #6c6cc2;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-animation: appearing 0.2s ease-out forwards;
+          animation: appearing 0.2s ease-out forwards;
+}
+
+@-webkit-keyframes appearing {
+  from {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes appearing {
+  from {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
